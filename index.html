@@ -527,61 +527,8 @@
             कब मरिहूँ कब देखिहूँ, पूरन परमानंद॥
         </p>
         <br>
-        <div class="video-container">
-            <div class="video-card">
-                <iframe class="video-frame" src="./1.mp4" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-                <div class="video-info">
-                    <p class="video-title"> पंथ श्री हुजूर उदितमुनि नाम साहब // राजस्थान कार्यक्रम 2024</p>
-                </div>
-            </div>
-            <div class="video-card">
-                <iframe class="video-frame" src="./2.mp4" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-                <div class="video-info">
-                    <p class="video-title"> पंथ श्री हुजूर उदितमुनि नाम साहब // राजस्थान कार्यक्रम 2024</p>
-                </div>
-            </div>
-            <div class="video-card">
-                <iframe class="video-frame" src="./3.mp4" frameborder="0" allow="autoplay; encrypted-media"
-                    allowfullscreen></iframe>
-                <div class="video-info">
-                    <p class="video-title"> पंथ श्री हुजूर उदितमुनि नाम साहब // राजस्थान कार्यक्रम 2024</p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <script>
-            document.getElementById('addVideoBtn').addEventListener('click', function () {
-                var videoUrl = document.getElementById('videoUrl').value;
-                var videoId = getYoutubeId(videoUrl);
-                if (videoId) {
-                    var iframe = document.createElement('iframe');
-                    iframe.src = 'https://www.youtube.com/embed/' + videoId;
-                    iframe.width = '100%';
-                    iframe.height = '315';
-                    iframe.frameBorder = '0';
-                    iframe.allow = 'autoplay; encrypted-media';
-                    iframe.allowFullscreen = true;
-
-                    var container = document.getElementById('customVideoContainer');
-                    container.innerHTML = '';
-                    container.appendChild(iframe);
-                } else {
-                    alert('Invalid YouTube URL. Please try again.');
-                }
-            });
-
-            function getYoutubeId(url) {
-                var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-                var match = url.match(regExp);
-                return (match && match[2].length == 11) ? match[2] : null;
-            }
-        </script>
-        <!-- end video -->
-        <br><br>
+        
+        
         <!-- event Start -->
         <div class="container-xxl py-5">
             <div class="container">
